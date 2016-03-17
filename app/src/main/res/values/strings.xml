@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Cube26</string>
+    <string name="hint">Search name or currency</string>
+    <string-array name="payment_gateway_names">
+        <item>Authorize.Net</item>
+        <item>VT Direct</item>
+        <item>PayU Money</item>
+        <item>Paypal</item>
+        <item>Stripe</item>
+    </string-array>
+</resources>

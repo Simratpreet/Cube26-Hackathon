@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar" android:id="@+id/toolbar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:text="BACK"
+                android:id="@+id/backButton"
+                android:background="@drawable/curved_edittext" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:text="LINK"
+                android:id="@+id/linkButton"
+                android:background="@drawable/curved_edittext" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LIKE"
+                android:id="@+id/likeButton"
+                android:background="@drawable/curved_edittext" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_item_bg"
+            android:padding="16dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/curved_edittext">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PayUMoney"
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/name"
+                    android:textSize="18sp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginTop="16dp">
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:rowCount="3"
+                    android:layout_weight="3"
+                    android:columnCount="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="User Rating : 4.5"
+                        android:padding="4dp"
+                        android:id="@+id/rating"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transaction Fees : $3 + 0.2 %"
+                        android:id="@+id/trans_fees"
+                        android:textColor="@color/colorBlack"
+                        android:padding="4dp"
+                        android:textSize="16sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Branding"
+                        android:id="@+id/branding"
+                        android:textColor="@color/colorBlack"
+                        android:padding="4dp"
+                        android:textSize="16sp"
+                        />
+                </GridLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:id="@+id/currencies"
+                android:textColor="@color/colorBlack"
+                android:text="Supported Currencies : "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description#"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="32dp"/>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/curved_edittext">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/description"/>
+            </ScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
